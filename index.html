@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <meta name="theme-color" content="#0a0e14">
-<title>Побег от Жез Кемпир</title>
+<title>Qara Tuyin — побег от Қара Түйін</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -392,22 +392,22 @@ button,a{touch-action:manipulation}
 <div id="app">
 
   <section id="scr-load" class="screen active">
-    <img class="logo" src="assets/logo.webp" alt="Жез Кемпир">
+    <img class="logo" src="assets/logo.webp" alt="Қара Түйін">
     <div class="loadbox">
       <div class="loadbar"><i id="loadfill"></i></div>
       <div class="loadpct" id="loadpct">0%</div>
     </div>
-    <img class="reldate" src="assets/release_date.webp" alt="Дата выхода">
+    <img class="reldate" src="assets/release_date.webp" alt="В кино с 5 ноября">
   </section>
 
   <!-- ================= МЕНЮ ================= -->
   <section id="scr-menu" class="screen">
     <div class="langbar">
-      <button class="lang" data-lang="ky">КЫРГЫЗЧА</button>
       <button class="lang" data-lang="ru">РУССКИЙ</button>
+      <button class="lang" data-lang="kk">ҚАЗАҚША</button>
     </div>
 
-    <img class="logo" src="assets/logo.webp" alt="Жез Кемпир">
+    <img class="logo" src="assets/logo.webp" alt="Қара Түйін">
     <div class="countdown" data-i18n="countdown"></div>
     <p class="logline" data-i18n="logline"></p>
 
@@ -433,7 +433,7 @@ button,a{touch-action:manipulation}
       <button class="btn-film" id="m-insta"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg><span>Instagram</span></button>
     </div>
 
-    <img class="reldate" src="assets/release_date.webp" alt="Дата выхода">
+    <img class="reldate" src="assets/release_date.webp" alt="В кино с 5 ноября">
     <div class="age">18+</div>
   </section>
 
@@ -448,7 +448,7 @@ button,a{touch-action:manipulation}
       <div id="stage-bg"></div>
       <div id="stage-shade"></div>
       <div id="road-zone">
-        <img class="logo-play" src="assets/logo.webp" alt="Жез Кемпир">
+        <img class="logo-play" src="assets/logo.webp" alt="Қара Түйін">
       </div>
       <div id="board"></div>
       <div id="actors">
@@ -458,7 +458,7 @@ button,a{touch-action:manipulation}
       <div id="danger"></div>
     </div>
     <div id="game-foot">
-      <img class="reldate-foot" src="assets/release_date.webp" alt="Дата выхода">
+      <img class="reldate-foot" src="assets/release_date.webp" alt="В кино с 5 ноября">
     </div>
     <div id="toast"></div>
   </section>
@@ -470,7 +470,7 @@ button,a{touch-action:manipulation}
 
   <!-- ================= РЕЗУЛЬТАТ ================= -->
   <section id="scr-over" class="screen">
-    <img class="logo small" src="assets/logo.webp" alt="Жез Кемпир">
+    <img class="logo small" src="assets/logo.webp" alt="Қара Түйін">
     <div id="over-verdict" class="verdict"></div>
 
     <div class="score-block">
@@ -500,7 +500,7 @@ button,a{touch-action:manipulation}
     </div>
 
     <div class="countdown" data-i18n="countdown"></div>
-    <img class="reldate small" src="assets/release_date.webp" alt="Дата выхода">
+    <img class="reldate small" src="assets/release_date.webp" alt="В кино с 5 ноября">
   </section>
 
   <!-- ================= РОЗЫГРЫШ ================= -->
@@ -555,13 +555,13 @@ button,a{touch-action:manipulation}
 /* ===== АДРЕС ИГРЫ =========================================================
    Меняете здесь — и такой же адрес пропишите в tools/build_assets.py
    (константа GAME_URL), затем запустите скрипт заново, чтобы перерисовался QR. */
-var GAME_URL = 'https://izibizproduction.github.io/jez-kempir-game/';
-var RELEASE = 'в кино с 17 сентября';
+var GAME_URL = 'https://izibizproduction.github.io/qara-tuyin/';
+var RELEASE = 'в кино с 5 ноября';
 /* Ссылка на трейлер — меняется здесь одной строкой */
 var TRAILER_URL = 'https://youtu.be/TvhZlP6e59M';
 var ICON_SOUND = '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 9v6h3l4 4V5L8 9zM16 9a4 4 0 0 1 0 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>';
 var ICON_MUTE = '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 9v6h3l4 4V5L8 9zM16 10l4 4M20 10l-4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>';
-var INSTA = 'jez_kempir_film';
+var INSTA = 'qaratuyin_film';
 
 /* ===== КОД РЕЗУЛЬТАТА =====================================================
    Печатается на картинке и позволяет проверить счёт без сервера: в коде
@@ -576,7 +576,7 @@ var INSTA = 'jez_kempir_film';
    кто просто открыл бы картинку в редакторе, но не того, кто разберётся
    в исходнике. Поэтому verify.html НЕ выкладывается в интернет, а у топ-3
    стоит попросить видео забега.                                          */
-var SIGN_KEY = 'jk-2026-09-17-zhez';
+var SIGN_KEY = 'qt-2026-11-05-qara';
 var A32 = '0123456789ABCDEFGHJKMNPQRSTVWXYZ';
 
 function enc32(n) {
@@ -605,12 +605,13 @@ var INSTA_URL = 'https://instagram.com/' + INSTA;
 
 
 /* ===== ЯЗЫКИ ==============================================================
-   ВНИМАНИЕ: кыргызский и казахский переводы сделаны без носителя языка.
-   Перед запуском обязательно дайте их вычитать — всё лежит в одном
-   объекте ниже, править можно прямо здесь.                            */
+   Основной язык — русский, дополнительный — казахский (kk).
+   ВНИМАНИЕ: казахский перевод сделан без носителя языка. Перед запуском
+   обязательно дайте его вычитать — всё лежит в одном объекте ниже,
+   править можно прямо здесь.                                          */
 var I18N = {
   ru: {
-    logline: 'Зимой в отрезанном от мира кыргызском селе пропадает школьный автобус с двенадцатью детьми. Уцелевшие взрослые клянутся, что их забрала нечистая сила, и обезумевшая от горя толпа идёт за старухой-знахаркой, которую здесь давно шёпотом зовут жез кемпир. Но правда о той ночи страшнее любого проклятия.',
+    logline: 'Зимой в отрезанном от мира горном селе пропадает школьный автобус с двенадцатью детьми. Уцелевшие взрослые клянутся, что их забрала нечистая сила, и обезумевшая от горя толпа идёт за старухой-знахаркой, которую здесь давно шёпотом зовут ведьмой. Но правда о той ночи страшнее любого проклятия.',
     howto: 'Собирай тройки где угодно — каждая ломает блок на пути ребёнка',
     run: 'БЕЖАТЬ', trailer: 'ТРЕЙЛЕР', tickets: 'БИЛЕТЫ', about: 'О ФИЛЬМЕ',
     hero_asan: 'АСАН', hero_asan_age: '9 лет',
@@ -623,79 +624,77 @@ var I18N = {
     code_label: 'КОД РЕЗУЛЬТАТА',
     contest_title: 'РОЗЫГРЫШ',
     prize_name: 'ТРИ БИЛЕТА НА ЗАКРЫТЫЙ ПОКАЗ',
-    prize_sub: 'Приём заявок с 8 по 14 сентября',
+    prize_sub: 'Приём заявок с 26 октября по 2 ноября',
     step1: 'Сохрани картинку с результатом',
-    step2: 'Выложи её в сторис Instagram и отметь @jez_kempir_film',
+    step2: 'Выложи её в сторис Instagram и отметь @qaratuyin_film',
     step3: 'Подпишись на аккаунт — так мы напишем победителю',
     save_img: 'СОХРАНИТЬ КАРТИНКУ', open_insta: 'ОТКРЫТЬ INSTAGRAM',
-    rules: 'Заявки принимаем с 8 по 14 сентября. Итоги 14 сентября в 20:00: три лучших результата получают по билету на закрытый показ. Сторис должна быть открытой. Код результата на картинке подтверждает счёт — при равенстве очков победит тот, кто выложил раньше. Фильм 18+, приз вручается совершеннолетним.',
+    rules: 'Заявки принимаем с 26 октября по 2 ноября. Итоги 3 ноября в 20:00: три лучших результата получают по билету на закрытый показ. Сторис должна быть открытой. Код результата на картинке подтверждает счёт — при равенстве очков победит тот, кто выложил раньше. Фильм 18+, приз вручается совершеннолетним.',
     tickets_title: 'ГДЕ СМОТРЕТЬ',
     tag_wa: 'WhatsApp', tag_box: 'касса',
-    tickets_note: 'Список кинотеатров пополняется. Если вашего города пока нет — следите за обновлениями в Instagram.',
+    tickets_note: 'Прямые ссылки на сеансы «Қара Түйін» появятся ближе к премьере. Пока открывайте афишу кинотеатра и ищите фильм в расписании с 5 ноября.',
     countdown_pre: 'ДО ПРЕМЬЕРЫ', countdown_days: ['ДЕНЬ', 'ДНЯ', 'ДНЕЙ'],
     countdown_today: 'ПРЕМЬЕРА СЕГОДНЯ', countdown_now: 'УЖЕ В КИНО',
     t_level: 'УРОВЕНЬ', t_combo: 'КОМБО x', t_entered: 'ОНА ВОШЛА',
     t_escaped: 'УСПЕЛ', t_shuffle: 'ОБЕРЕГИ СМЕСТИЛИСЬ',
     t_opened: 'ПРОХОД ОТКРЫЛСЯ', t_hint: 'БЫСТРЕЕ. ВОТ ЭТИ ДВА',
     copied: 'СКОПИРОВАНО',
-    share: 'Жез Кемпир забрала её на {level} уровне — {score} очков.\nОбгони меня и забери билет на закрытый показ.\n\nИграть: {url}\nТрейлер: {trailer}\n\n«ЖЕЗ КЕМПИР» — в кино с 17 сентября. 18+',
+    share: 'Она забрала её на {level} уровне — {score} очков.\nОбгони меня и забери билет на закрытый показ.\n\nИграть: {url}\nТрейлер: {trailer}\n\n«ҚАРА ТҮЙІН» — в кино с 5 ноября. 18+',
     p_win: 'ОБГОНИ МОЙ РЕЗУЛЬТАТ',
     p_sub: 'и выиграй билет на закрытый показ'
   },
-  ky: {
-    logline: 'Кышында сырткы дүйнө менен байланышы таптакыр үзүлгөн кыргыз айылында, ичинде 12 баласы бар мектеп автобусу дайынсыз жоголот. Аман калгандар балдарды кара күчтөр алып кетти деп какшашат. Кайгыдан акыл-эсин жоготкон эл, айылда эбактан бери эле өз ара шыбырашып «жез кемпир» атап жүргөн табып кемпирден өч алганы жөнөйт. Бирок ал түндүн чындыгы ар кандай каргыштан да коркунучтуу эле...',
-    howto: 'Каалаган жерден үчөөнү чогулт — ар бир жыйноо баланын жолундагы тосмону сындырат',
-    run: 'КАЧУУ', trailer: 'ТРЕЙЛЕР', tickets: 'БИЛЕТТЕР', about: 'ТАСМА ЖӨНҮНДӨ',
-    hero_asan: 'АСАН', hero_asan_age: '9 жашта',
-    hero_asel: 'АСЕЛЬ', hero_asel_age: '7 жашта',
-    level: 'ДЕҢГЭЭЛ', points: 'УПАЙ', time: 'УБАКЫТ', clears: 'ЖЫЙНОО',
-    record: 'рекордуң: ', newrecord: 'ЖАҢЫ РЕКОРД',
-    to_record: 'рекордго калды ',
-    caught_m: 'АЛ АНЫ АЛЫП КЕТТИ', caught_f: 'АЛ АНЫ АЛЫП КЕТТИ', quit: 'ОЮН БҮТТҮ',
-    join: 'БИЛЕТТИ АЛУУ', again: 'ДАГЫ БИР ЖОЛУ', copy: 'ТЕКСТ',
-    code_label: 'ЖЫЙЫНТЫК КОДУ',
-    contest_title: 'КОНКУРС',
-    prize_name: 'ЖАБЫК КӨРСӨТҮҮГӨ ҮЧ БИЛЕТ',
-    prize_sub: '8-14-сентябрь аралыгында катышыңыз',
-    step1: 'Жыйынтык сүрөтүн сактап ал',
-    step2: 'Аны Instagram сторисине жайгаштырып, @jez_kempir_film белгиле',
-    step3: 'Аккаунтка жазыл — жеңүүчүгө ошондон жазабыз',
-    save_img: 'СҮРӨТТҮ САКТОО', open_insta: 'INSTAGRAM АЧУУ',
-    rules: 'Табыштамалар 8-сентябрдан 14-сентябрга чейин кабыл алынат. Жыйынтык 14-сентябрда саат 20:00дө: эң мыкты үч жыйынтык жабык көрсөтүүгө билет алат. Сторис ачык болушу керек. Сүрөттөгү код упайды ырастайт — упай тең болсо, эрте жайгаштырган жеңет. Тасма 18+, байгени бойго жеткендер алат.',
-    tickets_title: 'КАЙДА КӨРҮҮ',
+  kk: {
+    logline: 'Қыс кезінде сыртқы дүниеден қол үзген тау ауылында он екі бала мінген мектеп автобусы жоғалып кетеді. Аман қалған ересектер балаларды жын-пері алып кетті деп ант береді, ал қайғыдан есі ауысқан жұрт ауылда баяғыдан бері сыбырлап мыстан атап жүрген емші кемпірден кек алмаққа аттанады. Бірақ сол түннің шындығы кез келген қарғыстан да қорқынышты.',
+    howto: 'Кез келген жерден үштікті жина — әрбір жиын баланың жолындағы бөгетті бұзады',
+    run: 'ҚАШ', trailer: 'ТРЕЙЛЕР', tickets: 'БИЛЕТТЕР', about: 'ФИЛЬМ ТУРАЛЫ',
+    hero_asan: 'АСАН', hero_asan_age: '9 жаста',
+    hero_asel: 'ӘСЕЛ', hero_asel_age: '7 жаста',
+    level: 'ДЕҢГЕЙ', points: 'ҰПАЙ', time: 'УАҚЫТ', clears: 'ЖИЫН',
+    record: 'рекордың: ', newrecord: 'ЖАҢА РЕКОРД',
+    to_record: 'рекордқа қалғаны ',
+    caught_m: 'ОЛ ОНЫ АЛЫП КЕТТІ', caught_f: 'ОЛ ОНЫ АЛЫП КЕТТІ', quit: 'ОЙЫН БІТТІ',
+    join: 'БИЛЕТ АЛУ', again: 'ТАҒЫ БІР РЕТ', copy: 'МӘТІН',
+    code_label: 'НӘТИЖЕ КОДЫ',
+    contest_title: 'ҰТЫС',
+    prize_name: 'ЖАБЫҚ КӨРСЕТІЛІМГЕ ҮШ БИЛЕТ',
+    prize_sub: '26 қазан мен 2 қараша аралығында қатысыңыз',
+    step1: 'Нәтиже суретін сақтап ал',
+    step2: 'Оны Instagram сторисіне жүктеп, @qaratuyin_film деп белгіле',
+    step3: 'Аккаунтқа жазыл — жеңімпазға сол арқылы хабарласамыз',
+    save_img: 'СУРЕТТІ САҚТАУ', open_insta: 'INSTAGRAM АШУ',
+    rules: 'Өтінімдер 26 қазаннан 2 қарашаға дейін қабылданады. Қорытынды 3 қарашада сағат 20:00-де: үздік үш нәтиже жабық көрсетілімге бір-бір билет алады. Сторис ашық болуы керек. Суреттегі код ұпайды растайды — ұпай тең болса, ерте жариялаған жеңеді. Фильм 18+, сыйлық кәмелетке толғандарға беріледі.',
+    tickets_title: 'ҚАЙДА КӨРУГЕ БОЛАДЫ',
     tag_wa: 'WhatsApp', tag_box: 'касса',
-    tickets_note: 'Кинотеатрлардын тизмеси толукталууда. Шаарыңыз жок болсо — Instagram аккаунтубузду ээрчиңиз.',
-    countdown_pre: 'ПРЕМЬЕРАГА', countdown_days: ['КҮН', 'КҮН', 'КҮН'],
-    countdown_today: 'ПРЕМЬЕРА БҮГҮН', countdown_now: 'КИНОТЕАТРЛАРДА',
-    t_level: 'ДЕҢГЭЭЛ', t_combo: 'КОМБО x', t_entered: 'АЛ КИРДИ',
-    t_escaped: 'ҮЛГҮРДҮ', t_shuffle: 'ТУМАРЛАР ЖЫЛДЫ',
-    t_opened: 'ЖОЛ АЧЫЛДЫ', t_hint: 'ТЕЗИРЭЭК. УШУЛ ЭКӨӨ',
-    copied: 'КӨЧҮРҮЛДҮ',
-    share: 'Жез Кемпир аны {level}-деңгээлде алып кетти — {score} упай.\nМени озуп, жабык көрсөтүүгө билет утуп ал.\n\nОйноо: {url}\nТрейлер: {trailer}\n\n«ЖЕЗ КЕМПИР» — 17-сентябрдан баштап кинотеатрларда. 18+',
-    p_win: 'МЕНИН ЖЫЙЫНТЫГЫМДЫ ОЗУП ӨТ',
-    p_sub: 'жана жабык көрсөтүүгө билет утуп ал'
+    tickets_note: '«Қара Түйін» сеанстарына тікелей сілтемелер премьераға жақын қосылады. Әзірге кинотеатрдың афишасын ашып, 5 қарашадан бастап кестеден фильмді іздеңіз.',
+    countdown_pre: 'ПРЕМЬЕРАҒА', countdown_days: ['КҮН', 'КҮН', 'КҮН'],
+    countdown_today: 'ПРЕМЬЕРА БҮГІН', countdown_now: 'КИНОТЕАТРЛАРДА',
+    t_level: 'ДЕҢГЕЙ', t_combo: 'КОМБО x', t_entered: 'ОЛ КІРДІ',
+    t_escaped: 'ҮЛГЕРДІ', t_shuffle: 'ТҰМАРЛАР ЖЫЛЖЫДЫ',
+    t_opened: 'ЖОЛ АШЫЛДЫ', t_hint: 'ЖЫЛДАМЫРАҚ. МІНЕ, ОСЫ ЕКЕУІ',
+    copied: 'КӨШІРІЛДІ',
+    share: 'Ол оны {level}-деңгейде алып кетті — {score} ұпай.\nМені басып озып, жабық көрсетілімге билет ұтып ал.\n\nОйнау: {url}\nТрейлер: {trailer}\n\n«ҚАРА ТҮЙІН» — 5 қарашадан бастап кинотеатрларда. 18+',
+    p_win: 'МЕНІҢ НӘТИЖЕМДІ БАСЫП ОЗ',
+    p_sub: 'және жабық көрсетілімге билет ұтып ал'
   }
 };
-
 var lang = 'ru';
 function tr(k) { return (I18N[lang] && I18N[lang][k]) || I18N.ru[k] || ''; }
 
-/* Язык телефона: ru — русский, ky — кыргызский, kk — казахский.
-   Ручной выбор запоминается. */
+/* Язык телефона: ru — русский, kk — казахский. Ручной выбор запоминается. */
 function detectLang() {
   try {
     var saved = localStorage.getItem('jk_lang');
     if (saved && I18N[saved]) return saved;
   } catch (e) {}
-  /* Фильм кыргызский, поэтому кыргызский — язык по умолчанию.
-     Русский показываем только тем, у кого телефон явно на русском. */
-  var list = navigator.languages || [navigator.language || 'ky'];
+  /* Основной язык проката — русский. Казахский показываем тем,
+     у кого телефон явно на казахском. */
+  var list = navigator.languages || [navigator.language || 'ru'];
   for (var i = 0; i < list.length; i++) {
     var code = String(list[i]).toLowerCase();
-    if (code.indexOf('ky') === 0 || code.indexOf('kir') === 0) return 'ky';
+    if (code.indexOf('kk') === 0 || code.indexOf('kaz') === 0) return 'kk';
     if (code.indexOf('ru') === 0) return 'ru';
   }
-  return 'ky';
+  return 'ru';
 }
 function setLang(v) {
   lang = I18N[v] ? v : 'ru';
@@ -712,7 +711,7 @@ function setLang(v) {
 }
 
 /* ---------- обратный отсчёт до премьеры ---------- */
-var PREMIERE = new Date(2026, 8, 17);           // 17 сентября 2026
+var PREMIERE = new Date(2026, 10, 5);           // 5 ноября 2026
 function daysLeft() {
   var now = new Date(), a = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   return Math.round((PREMIERE - a) / 86400000);
@@ -731,87 +730,63 @@ function countdownText() {
 }
 
 /* ---------- кинотеатры ----------------------------------------------------
-   Список собран из файла КИНОТЕАТРЫ.xlsx (сентябрь 2026) и ссылок на
-   страницы фильма на сайтах кинотеатров. Формат: страна → город → залы.
-   kind у зала: 'online' — прямая ссылка на покупку билета,
+   Казахстанский прокат «Қара Түйін» — с 5 ноября 2026.
+   Пока сеансы не выложены, ссылки ведут на афиши сетей и кинотеатров;
+   как появятся страницы фильма, просто подставьте их сюда.
+   Формат: страна → группа (город или «сети») → залы.
+   kind у зала: 'online' — прямая ссылка на страницу фильма,
+                'site'   — афиша кинотеатра или сети,
                 'wa'     — бронь по WhatsApp,
                 'box'    — только касса (ссылка не обязательна).
    Если kind не указан, зал со ссылкой считается онлайновым, без — кассовым. */
 var CINEMAS = [
   {
-    "country": "Кыргызстан",
+    "country": "Казахстан",
     "cities": [
       {
-        "city": "Бишкек",
+        "city": "Сети кинотеатров",
         "halls": [
-          { "name": "Синематика — все залы", "kind": "online",
-            "url": "https://cinematica.kg/movies/3251" },
-          { "name": "Бродвей — Азия Молл", "kind": "online",
-            "url": "https://broadway.kg/events/zhez-kempir-2026?date=2026/09/17&facility=broadway" },
-          { "name": "ЦУМ Синема", "kind": "online",
-            "url": "https://tsumcinema.kg/events/zhez-kempir-2026" },
-          { "name": "Кинотеатр «Ала-Тоо»", "kind": "online",
-            "url": "https://alatoocinema.com/details/162" },
-          { "name": "Кинотеатр «Манас»", "kind": "online",
-            "url": "https://manascinema.com/details/506" },
-          { "name": "Кинотеатр «Джал»", "kind": "wa",
-            "url": "https://wa.me/996705133000" }
+          { "name": "Kinopark & Kinoplexx", "kind": "site",
+            "url": "https://www.kinopark.kz/ru" },
+          { "name": "Chaplin Cinemas", "kind": "site",
+            "url": "https://chaplin.kz/" },
+          { "name": "Кинотеатры «Арман»", "kind": "site",
+            "url": "https://arman3d.kz/" }
         ]
       },
       {
-        "city": "Ош",
+        "city": "Алматы",
         "halls": [
-          { "name": "Galaxy Cinema", "kind": "online",
-            "url": "https://oshcinema.kg/events/zhez-kempir-2026?facility=galaxy-cinema" },
-          { "name": "Нур Синема", "kind": "online",
-            "url": "https://www.nurcinema.kg/release/17.09.2026/404" },
-          { "name": "Кинобокс «Семетей»", "kind": "online",
-            "url": "http://www.kinobox.kg/films/2244" }
+          { "name": "Kinoforum", "kind": "site", "url": "https://kinoforum.kz/" },
+          { "name": "Lumiera Cinema", "kind": "site",
+            "url": "https://afisha.yandex.kz/almaty/cinema/places/lumiera-cinema" },
+          { "name": "Все кинотеатры Алматы", "kind": "site",
+            "url": "https://ticketon.kz/almaty/cinema" }
         ]
       },
       {
-        "city": "Манас",
+        "city": "Астана",
         "halls": [
-          { "name": "Galaxy Cinema", "kind": "online",
-            "url": "https://galaxycinema.kg/events/zhez-kempir-2026" }
+          { "name": "«Евразия Синема»", "kind": "site",
+            "url": "https://eurasia-cinema.kz/" },
+          { "name": "Все кинотеатры Астаны", "kind": "site",
+            "url": "https://ticketon.kz/astana/cinema" }
         ]
       },
-      { "city": "Токтогул", "halls": [
-          { "name": "Токтогул Синема", "kind": "wa", "url": "https://wa.me/996503337337" } ] },
-      { "city": "Кербен", "halls": [
-          { "name": "Кинотеатр «Кербен»", "kind": "wa", "url": "https://wa.me/996226444888" } ] },
-      { "city": "Кочкор-Ата", "halls": [
-          { "name": "Кинотеатр «Кочкор-Ата»", "kind": "wa", "url": "https://wa.me/996220217217" } ] },
-      { "city": "Кызыл-Кыя", "halls": [
-          { "name": "Кызыл-Кыя Синема", "kind": "wa", "url": "https://wa.me/996776771619" },
-          { "name": "Кызыл-Кыя «Байэл»", "kind": "wa", "url": "https://wa.me/996553950795" } ] },
-      { "city": "Кызыл-Адыр", "halls": [
-          { "name": "«Айтматов-Семетей»", "kind": "wa", "url": "https://wa.me/996508071077" } ] },
-      { "city": "Талас", "halls": [
-          { "name": "«Кырк-Чоро»", "kind": "wa", "url": "https://wa.me/996779602178" } ] },
-      { "city": "Каракол", "halls": [
-          { "name": "«Ысык-Көл»", "kind": "wa", "url": "https://wa.me/996223444888" } ] },
-      { "city": "Тюп", "halls": [
-          { "name": "«Жаз»", "kind": "wa", "url": "https://wa.me/996221444888" } ] },
-      { "city": "Кара-Балта", "halls": [
-          { "name": "«Жаштык»", "kind": "wa", "url": "https://wa.me/996702444888" } ] },
-      { "city": "Токмок", "halls": [
-          { "name": "«Космос»", "kind": "wa", "url": "https://wa.me/996504444222" },
-          { "name": "Star Cinema", "kind": "wa", "url": "https://wa.me/996557513053" } ] },
-      { "city": "Нарын", "halls": [
-          { "name": "«Универ»", "kind": "wa", "url": "https://wa.me/996501487877" } ] }
-    ]
-  },
-  {
-    "country": "Россия",
-    "cities": [
       {
-        "city": "Москва",
+        "city": "Шымкент",
         "halls": [
-          { "name": "Кинотеатр «Манас» (ш. Энтузиастов)", "kind": "box",
-            "url": "https://www.instagram.com/kinoteatrmanas/" },
-          { "name": "Кинотеатр «Манас 2 KG»", "kind": "box",
-            "url": "https://www.instagram.com/kinoteatrmanas/" }
+          { "name": "Все кинотеатры Шымкента", "kind": "site",
+            "url": "https://ticketon.kz/shymkent/cinema" }
+        ]
+      },
+      {
+        "city": "Афиша по всей стране",
+        "halls": [
+          { "name": "Ticketon", "kind": "site", "url": "https://ticketon.kz/cinema" },
+          { "name": "Kino.kz", "kind": "site", "url": "https://kino.kz/ru/locations/cinemas" },
+          { "name": "Яндекс Афиша", "kind": "site",
+            "url": "https://afisha.yandex.kz/almaty/cinema" }
         ]
       }
     ]
@@ -1653,7 +1628,7 @@ function drawActor(el, a, spr, scale) {
 }
 
 /* ---------- цикл ---------- */
-/* Пока Жез Кемпир в доме, она наливается силой: сначала RUSH_GRACE секунд
+/* Пока ведьма в доме, она наливается силой: сначала RUSH_GRACE секунд
    идёт как обычно (это время нужно нормальному игроку, чтобы доиграть
    уровень), а потом разгоняется и тянется всё дальше. Так наказывается
    только стояние на месте, а не игра. */
@@ -1688,7 +1663,7 @@ function frame(ts) {
       SFX.enter(); toast(tr('t_entered'));
     }
   } else {
-    /* Пока Жез Кемпир в доме, она разгоняется. Уворачиваться можно,
+    /* Пока ведьма в доме, она разгоняется. Уворачиваться можно,
        но не бесконечно — иначе пассивная игра ничем не наказывалась. */
     witch.huntT += dt;
     var over = Math.max(0, witch.huntT - RUSH_GRACE);
@@ -1988,12 +1963,12 @@ function openInstagram(storyCamera) {
 }
 
 function saveResult() {
-  var name = 'zhez-kempir-' + stats.score + '.png';
+  var name = 'qara-tuyin-' + stats.score + '.png';
   function viaShare(blob) {
     try {
       var file = new File([blob], name, { type: 'image/png' });
       if (navigator.canShare && navigator.canShare({ files: [file] })) {
-        navigator.share({ files: [file], title: 'Побег от Жез Кемпир', text: shareText() })
+        navigator.share({ files: [file], title: 'Побег от Қара Түйін', text: shareText() })
           .catch(function () {});
         return true;
       }
