@@ -116,7 +116,7 @@ var INSTA = 'qaratuyin_film';                             // аккаунт в �
 ## Адрес игры (QR и ссылка в тексте результата)
 
 Игра опубликована на GitHub Pages из ветки `main`:
-`https://izibizproduction.github.io/qara-tuyin/` — этот же адрес зашит в
+`https://izibizproduction.github.io/qara-tuyin-game/` — этот же адрес зашит в
 константу `GAME_URL` в начале блока `<script>` и нарисован в QR на постере
 результата (`assets/qr.webp`).
 
